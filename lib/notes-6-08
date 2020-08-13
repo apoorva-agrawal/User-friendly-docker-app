@@ -1,0 +1,81 @@
+we will change our command line interface to mobile user interface
+
+we will create an user input where we can ask the user what he wanna do
+even if he wants to launch docker, he can
+
+when he give an input, it should ping a server
+
+if we wanna send some data or instruction to the server via http, we have some commands
+such as -get command
+
+field, key and variable are same words here---> we use "field" here
+
+if you are seeing an url in your http package that means user has used the "get" method
+if "post" method is used, data get encrypted
+        "q-linux"
+        ""q-linux"              // just a small part of whole url
+
+but these parts tell the browser, what to open
+
+URL-  http://IP//pageName?x=ubuntu&y=mysql&....so on
+
+        #curl http://192.168.0.106/home.html
+    curl means client url
+
+    if being a client we want to send something like x=vimal
+    # #curl http://192.168.0.106/home.html?x=vimal
+
+now there is a reason we don't send input in html files, we use python files---> ask on slack
+
+    ?- into
+
+        curl http://192.168.0.106/home.html/cgi-bin/web.py
+
+by default webserver supplies input(x=vimal) given by us to python file i.e. web.py
+
+        #!usr/bin/
+
+
+if we want our code to be read, we woud want some language
+such languages are called backend languages like python, php etc.
+
+in python cgi() is a function----> cgi.FieldStorage()
+
+    #mydata =  cgi.FieldStorage()           // this will retrive data and stores in mydata
+    # myx = mydata.getvalue("x")
+    # print(myx)
+
+    #curl http://192.168.0.106/home.html/cgi-bin/web.py?x=pop
+    => pop                      //now our code is retrieving th data
+
+
+    # output = subprocess.getoutput("myx")
+    # print(output)
+
+    now if we pop x=date
+    command terminal wil give us actual date of the day
+
+
+NOW we want our client to be able to access the url mentioned in linux terminal
+-linking flutter with url
+- install http--->pubspec.yaml
+-
+
+
+        #useradd new_user       // to create new account
+        #ide new_user           // to check if the account is there or not
+
+with frontend, we were not able to run all the commands, because some commands can only be run by root
+and here webserver runs the code with apache account, not with root, that's why it's unable to access all the commands.
+
+Now to give apache server/account all the power to access all the commands,
+we'll write in directory /etc/sudoers
+                # apache ALL=(ALL)  ALL
+                #wq!            //save this file
+
+    now we'll got to web.py
+   linux        #output = subprocess.getoutput("sudo" + myx)
+                #print( output)
+
+
+
